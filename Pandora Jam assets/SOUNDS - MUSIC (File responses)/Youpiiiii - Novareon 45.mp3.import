@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://6m2n4jfaajfe"
+path="res://.godot/imported/Youpiiiii - Novareon 45.mp3-5f3710fa6ef1a11b3063b070e79869a3.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Youpiiiii - Novareon 45.mp3"
+dest_files=["res://.godot/imported/Youpiiiii - Novareon 45.mp3-5f3710fa6ef1a11b3063b070e79869a3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://blns3mas03t02"
+path="res://.godot/imported/miaou_victory - Élie WILHELM.mp3-0b04682a1900b709db7a02796e543019.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/miaou_victory - Élie WILHELM.mp3"
+dest_files=["res://.godot/imported/miaou_victory - Élie WILHELM.mp3-0b04682a1900b709db7a02796e543019.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

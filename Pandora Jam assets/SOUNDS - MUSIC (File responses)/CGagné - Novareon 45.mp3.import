@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ckb1vod4u5b13"
+path="res://.godot/imported/CGagné - Novareon 45.mp3-d22c18411b32da93e4079798904a99a9.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/CGagné - Novareon 45.mp3"
+dest_files=["res://.godot/imported/CGagné - Novareon 45.mp3-d22c18411b32da93e4079798904a99a9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

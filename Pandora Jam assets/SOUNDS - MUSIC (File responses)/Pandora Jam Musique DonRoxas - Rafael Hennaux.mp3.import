@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://by5cr0vjsa5p0"
+path="res://.godot/imported/Pandora Jam Musique DonRoxas - Rafael Hennaux.mp3-ca64484b3c033f09da22d06b82198aad.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Pandora Jam Musique DonRoxas - Rafael Hennaux.mp3"
+dest_files=["res://.godot/imported/Pandora Jam Musique DonRoxas - Rafael Hennaux.mp3-ca64484b3c033f09da22d06b82198aad.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

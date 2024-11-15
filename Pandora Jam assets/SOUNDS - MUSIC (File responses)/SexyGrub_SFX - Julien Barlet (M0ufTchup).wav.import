@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cagu8wy52i5u2"
+path="res://.godot/imported/SexyGrub_SFX - Julien Barlet (M0ufTchup).wav-99418e2ca122b73b7f4ccdbf48f5faa6.sample"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/SexyGrub_SFX - Julien Barlet (M0ufTchup).wav"
+dest_files=["res://.godot/imported/SexyGrub_SFX - Julien Barlet (M0ufTchup).wav-99418e2ca122b73b7f4ccdbf48f5faa6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

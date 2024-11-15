@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://8fafm0bphu4q"
+path="res://.godot/imported/Pan_SFX - Julien Barlet (M0ufTchup).wav-2e9bbac1432a17686db1bbf1ab5e73e3.sample"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Pan_SFX - Julien Barlet (M0ufTchup).wav"
+dest_files=["res://.godot/imported/Pan_SFX - Julien Barlet (M0ufTchup).wav-2e9bbac1432a17686db1bbf1ab5e73e3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

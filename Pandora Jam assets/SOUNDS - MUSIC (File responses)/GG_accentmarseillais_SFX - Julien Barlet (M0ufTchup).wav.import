@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cvr04ort0scg5"
+path="res://.godot/imported/GG_accentmarseillais_SFX - Julien Barlet (M0ufTchup).wav-3b294970ab186abe84d125301e54ebd9.sample"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/GG_accentmarseillais_SFX - Julien Barlet (M0ufTchup).wav"
+dest_files=["res://.godot/imported/GG_accentmarseillais_SFX - Julien Barlet (M0ufTchup).wav-3b294970ab186abe84d125301e54ebd9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

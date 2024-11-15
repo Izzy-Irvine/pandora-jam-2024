@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bw0llqov1o8uk"
+path="res://.godot/imported/Grésillements - Novareon 45.mp3-476e5b496444372fc60ae548177ed760.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Grésillements - Novareon 45.mp3"
+dest_files=["res://.godot/imported/Grésillements - Novareon 45.mp3-476e5b496444372fc60ae548177ed760.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

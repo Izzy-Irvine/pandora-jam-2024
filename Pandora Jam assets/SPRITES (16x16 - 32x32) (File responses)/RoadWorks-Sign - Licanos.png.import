@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ciyqnpc0niqnm"
+path="res://.godot/imported/RoadWorks-Sign - Licanos.png-547f3d60ed426cb670306f1df68a74ab.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/RoadWorks-Sign - Licanos.png"
+dest_files=["res://.godot/imported/RoadWorks-Sign - Licanos.png-547f3d60ed426cb670306f1df68a74ab.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

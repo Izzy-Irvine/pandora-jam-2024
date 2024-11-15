@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://lwsy7oqh7ijc"
+path="res://.godot/imported/Pwet_SFX - Julien Barlet (M0ufTchup).wav-3bba74c418aa06746fb622433d740b27.sample"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Pwet_SFX - Julien Barlet (M0ufTchup).wav"
+dest_files=["res://.godot/imported/Pwet_SFX - Julien Barlet (M0ufTchup).wav-3bba74c418aa06746fb622433d740b27.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

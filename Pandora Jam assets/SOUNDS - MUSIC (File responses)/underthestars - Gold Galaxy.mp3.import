@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c72teacol6nr4"
+path="res://.godot/imported/underthestars - Gold Galaxy.mp3-f92c3f4937e8d245bb860ab46d0fbe27.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/underthestars - Gold Galaxy.mp3"
+dest_files=["res://.godot/imported/underthestars - Gold Galaxy.mp3-f92c3f4937e8d245bb860ab46d0fbe27.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

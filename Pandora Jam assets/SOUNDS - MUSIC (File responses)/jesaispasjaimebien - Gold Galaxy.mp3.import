@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://davptx8ytr3wa"
+path="res://.godot/imported/jesaispasjaimebien - Gold Galaxy.mp3-067f35924fdb9f314450e8ee836ded0e.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/jesaispasjaimebien - Gold Galaxy.mp3"
+dest_files=["res://.godot/imported/jesaispasjaimebien - Gold Galaxy.mp3-067f35924fdb9f314450e8ee836ded0e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

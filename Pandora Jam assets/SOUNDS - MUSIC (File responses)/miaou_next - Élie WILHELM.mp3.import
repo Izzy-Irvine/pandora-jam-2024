@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://je185yhiwvd0"
+path="res://.godot/imported/miaou_next - Élie WILHELM.mp3-3e8ad8d5a0f9337dd59f5b502b4ab7c5.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/miaou_next - Élie WILHELM.mp3"
+dest_files=["res://.godot/imported/miaou_next - Élie WILHELM.mp3-3e8ad8d5a0f9337dd59f5b502b4ab7c5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

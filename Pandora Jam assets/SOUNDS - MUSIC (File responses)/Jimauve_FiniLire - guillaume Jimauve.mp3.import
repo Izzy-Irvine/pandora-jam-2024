@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dr0hlbnia8wb4"
+path="res://.godot/imported/Jimauve_FiniLire - guillaume Jimauve.mp3-3f97bc446026da6fd5bccd46c4ad78e1.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Jimauve_FiniLire - guillaume Jimauve.mp3"
+dest_files=["res://.godot/imported/Jimauve_FiniLire - guillaume Jimauve.mp3-3f97bc446026da6fd5bccd46c4ad78e1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

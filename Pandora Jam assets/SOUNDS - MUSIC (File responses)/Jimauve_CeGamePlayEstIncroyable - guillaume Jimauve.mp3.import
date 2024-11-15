@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsfq77nsevl7c"
+path="res://.godot/imported/Jimauve_CeGamePlayEstIncroyable - guillaume Jimauve.mp3-6f39412fec03856d9e2e95c828ca7233.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Jimauve_CeGamePlayEstIncroyable - guillaume Jimauve.mp3"
+dest_files=["res://.godot/imported/Jimauve_CeGamePlayEstIncroyable - guillaume Jimauve.mp3-6f39412fec03856d9e2e95c828ca7233.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

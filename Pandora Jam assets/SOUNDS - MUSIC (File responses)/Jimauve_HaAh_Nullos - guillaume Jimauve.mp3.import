@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbqeieaqo5k46"
+path="res://.godot/imported/Jimauve_HaAh_Nullos - guillaume Jimauve.mp3-d7946cf3e6a3db37f13f3814de96714c.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Jimauve_HaAh_Nullos - guillaume Jimauve.mp3"
+dest_files=["res://.godot/imported/Jimauve_HaAh_Nullos - guillaume Jimauve.mp3-d7946cf3e6a3db37f13f3814de96714c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

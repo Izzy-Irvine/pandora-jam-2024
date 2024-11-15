@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dfha0r6xkkinm"
+path="res://.godot/imported/Stinger_Defeat_2_Master - Nicolas NONYME.mp3-e8f4ec791138585f5de1fdcbb066d478.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Stinger_Defeat_2_Master - Nicolas NONYME.mp3"
+dest_files=["res://.godot/imported/Stinger_Defeat_2_Master - Nicolas NONYME.mp3-e8f4ec791138585f5de1fdcbb066d478.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

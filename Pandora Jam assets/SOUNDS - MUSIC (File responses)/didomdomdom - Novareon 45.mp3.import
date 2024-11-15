@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgqdh8xf2fxn7"
+path="res://.godot/imported/didomdomdom - Novareon 45.mp3-81d6ff41034e63e0749337f2ead261ae.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/didomdomdom - Novareon 45.mp3"
+dest_files=["res://.godot/imported/didomdomdom - Novareon 45.mp3-81d6ff41034e63e0749337f2ead261ae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://baivltegmwpta"
+path="res://.godot/imported/Wouwouwou - Novareon 45.mp3-0dfea03be87b92a11942ca3cd0aeebe4.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Wouwouwou - Novareon 45.mp3"
+dest_files=["res://.godot/imported/Wouwouwou - Novareon 45.mp3-0dfea03be87b92a11942ca3cd0aeebe4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

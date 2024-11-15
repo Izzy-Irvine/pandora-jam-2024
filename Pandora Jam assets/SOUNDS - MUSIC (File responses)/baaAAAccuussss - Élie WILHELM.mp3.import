@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dfun4vgr6dg07"
+path="res://.godot/imported/baaAAAccuussss - Élie WILHELM.mp3-f5720adc6376d33504add36fb982c5e9.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/baaAAAccuussss - Élie WILHELM.mp3"
+dest_files=["res://.godot/imported/baaAAAccuussss - Élie WILHELM.mp3-f5720adc6376d33504add36fb982c5e9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

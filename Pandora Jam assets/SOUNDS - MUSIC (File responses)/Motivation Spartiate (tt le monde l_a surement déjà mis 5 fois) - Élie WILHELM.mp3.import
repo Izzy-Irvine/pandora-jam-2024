@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dovi77oprs8qk"
+path="res://.godot/imported/Motivation Spartiate (tt le monde l_a surement déjà mis 5 fois) - Élie WILHELM.mp3-b1599b953c7c30c237c35cd1e2e49463.mp3str"
+
+[deps]
+
+source_file="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Motivation Spartiate (tt le monde l_a surement déjà mis 5 fois) - Élie WILHELM.mp3"
+dest_files=["res://.godot/imported/Motivation Spartiate (tt le monde l_a surement déjà mis 5 fois) - Élie WILHELM.mp3-b1599b953c7c30c237c35cd1e2e49463.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
