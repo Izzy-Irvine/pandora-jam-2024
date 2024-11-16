@@ -4,6 +4,7 @@ extends CharacterBody2D
 var speed = 10
 var screen_width 
 var screen_margin
+var back_max = 100
 
 signal scroll_right(delta)
 
@@ -14,16 +15,16 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	velocity = Vector2()
-	var player_position = global_position.x
 
 	if Input.is_action_pressed("ui_right"):
-		if player_position > screen_width - screen_margin:
+		if global_position.x > screen_width - screen_margin:
 			print("Scrolling")
 			emit_signal("scroll_right", delta)
 		else:
 			velocity.x += 1
 	if Input.is_action_pressed("ui_left"):
-		velocity.x -= 1
+		if global_position.x > back_max:
+			velocity.x -= 1
 	if Input.is_action_pressed("ui_down"):
 		velocity.y += 1
 	if Input.is_action_pressed("ui_up"):
