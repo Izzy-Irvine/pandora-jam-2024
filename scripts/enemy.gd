@@ -5,6 +5,7 @@ extends Node2D
 @export var overshoot_distance = 100
 @export var health = 5
 @export var speed_reduction_time = 0.25
+@export var attack_strength = 20
 
 var velocity = 0
 var direction = -1
@@ -77,6 +78,5 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 		$AnimatedSprite2D.play("run")
 
 func _on_body_entered(body: Node2D) -> void:
-	if body == player:
-		player.hurt(20)
-	pass # Replace with function body.
+	if body == player and not dead:
+		player.hurt(attack_strength)
