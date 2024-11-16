@@ -9,6 +9,7 @@ var screen_height
 var screen_margin
 var up_max = 120
 var sprite_size
+var health = 100
 
 signal scroll_right(delta)
 
@@ -50,3 +51,8 @@ func _process(delta):
 
 	velocity = velocity.normalized() * speed
 	move_and_collide(velocity)
+
+func hurt(damage):
+	health -= damage
+	if health <= 0:
+		get_tree().quit()
