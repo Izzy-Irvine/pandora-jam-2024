@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bcvtltli0c10m"]
 
-[ext_resource type="Script" path="res://scenes/sprites/bullet.gd" id="1_l84nv"]
+[ext_resource type="Script" path="res://scripts/bullet.gd" id="1_l84nv"]
 [ext_resource type="Texture2D" uid="uid://bwe7l4ex8tvbp" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/Bullet2 - Licanos.png" id="1_xwnov"]
 [ext_resource type="AudioStream" uid="uid://crul4og61u6m8" path="res://Pandora Jam assets edited/Piou - Novareon 45 trimed.wav" id="3_hkcpc"]
 
