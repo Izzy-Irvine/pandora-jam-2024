@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwdteq2b77s3d"]
+
+[ext_resource type="Texture2D" uid="uid://xbliqoccl3un" path="res://sprites/level/background/Background_Graveyard_sky_tilable - Tagu.png" id="1_fq7l8"]
+[ext_resource type="Texture2D" uid="uid://8jcvwo8uxhs6" path="res://sprites/level/background/Background_Graveyard_front_tilable - Tagu.png" id="2_ysi1c"]
+[ext_resource type="Texture2D" uid="uid://t472b14i02fp" path="res://sprites/level/background/Background_Graveyard_back_tilable - Tagu.png" id="3_xk64p"]
+
+[node name="Background" type="Node2D"]
+
+[node name="BackgroundGraveyardSkyTilable-Tagu" type="Sprite2D" parent="."]
+scale = Vector2(10, 6)
+texture = ExtResource("1_fq7l8")
+centered = false
+
+[node name="BackgroundGraveyardFrontTilable-Tagu" type="Sprite2D" parent="."]
+scale = Vector2(10, 6)
+texture = ExtResource("2_ysi1c")
+centered = false
+
+[node name="BackgroundGraveyardBackTilable-Tagu" type="Sprite2D" parent="."]
+scale = Vector2(10, 6)
+texture = ExtResource("3_xk64p")
+centered = false
