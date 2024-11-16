@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://biiq6qbe0j6ef"]
 
-[ext_resource type="Script" path="res://scenes/enemy/enemy.gd" id="1_ee3fb"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_ee3fb"]
 [ext_resource type="Texture2D" uid="uid://bymjnlrx0culi" path="res://sprites/enemy/Kask_attack_01 - Tagu.png" id="2_5wpik"]
 [ext_resource type="Texture2D" uid="uid://daeqmhs37vb8f" path="res://sprites/enemy/Kask_run_01 - Tagu.png" id="2_75iye"]
 [ext_resource type="Texture2D" uid="uid://cbstfgqrx35dt" path="res://sprites/enemy/Kask_run_02 - Tagu.png" id="3_8xy0u"]
