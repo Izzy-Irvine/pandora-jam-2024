@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://biiq6qbe0j6ef"]
 
-[ext_resource type="Script" path="res://scenes/enemy/enemy.gd" id="1_ee3fb"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_ee3fb"]
 [ext_resource type="Texture2D" uid="uid://bymjnlrx0culi" path="res://sprites/enemy/Kask_attack_01 - Tagu.png" id="2_5wpik"]
 [ext_resource type="Texture2D" uid="uid://daeqmhs37vb8f" path="res://sprites/enemy/Kask_run_01 - Tagu.png" id="2_75iye"]
 [ext_resource type="Texture2D" uid="uid://cbstfgqrx35dt" path="res://sprites/enemy/Kask_run_02 - Tagu.png" id="3_8xy0u"]
@@ -84,7 +84,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wjxpw"]
 size = Vector2(16, 22)
 
-[node name="Enemy" type="Node2D"]
+[node name="Enemy" type="Area2D"]
 script = ExtResource("1_ee3fb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -101,6 +101,7 @@ rect = Rect2(-10, -10, 32, 32)
 position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_wjxpw")
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
