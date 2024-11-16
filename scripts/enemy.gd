@@ -56,3 +56,9 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 	if $AnimatedSprite2D.animation == "wake":
 		active = true
 		$AnimatedSprite2D.play("run")
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body == player:
+		player.hurt(20)
+	pass # Replace with function body.
