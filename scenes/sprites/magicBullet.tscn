@@ -1,3 +1,44 @@
-[gd_scene format=3 uid="uid://db63n0fuhkjxk"]
+[gd_scene load_steps=8 format=3 uid="uid://db63n0fuhkjxk"]
+
+[ext_resource type="Texture2D" uid="uid://contotr20bbjn" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_01 - Tagu(1).png" id="1_vq5s7"]
+[ext_resource type="Texture2D" uid="uid://dhrlg8fiq8hgl" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_02 - Tagu(1).png" id="2_i5pba"]
+[ext_resource type="Texture2D" uid="uid://bxbexldr0rbft" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_05 - Tagu(1).png" id="3_bp7po"]
+[ext_resource type="Texture2D" uid="uid://c5178kd5knhew" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_04 - Tagu(1).png" id="4_bnaxr"]
+[ext_resource type="Texture2D" uid="uid://cs3p36s0jdl84" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_03 - Tagu(1).png" id="5_bkedn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7pngn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vq5s7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_i5pba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bp7po")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bnaxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bkedn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3g3tu"]
 
 [node name="MagicBulit" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-11, 1)
+rotation = -1.5708
+scale = Vector2(1.4375, 1.46875)
+sprite_frames = SubResource("SpriteFrames_7pngn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 1)
+shape = SubResource("CircleShape2D_3g3tu")
