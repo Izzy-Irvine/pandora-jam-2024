@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+var bullet_scene = preload("res://scenes/sprites/bullet.tscn")
+
 # Declare member variables here. Examples:
 var speed = 10
 var screen_width 
@@ -36,6 +38,15 @@ func _process(delta):
 	if Input.is_action_pressed("ui_up"):
 		if global_position.y > up_max:
 			velocity.y -= 1
+			
+	if Input.is_action_pressed("fire_gun"):
+		var bullet = bullet_scene.instantiate()
+		bullet.position = position
+		get_parent().add_child(bullet)
+		print("fire bullet")
+	
+	if Input.is_action_pressed("fire_wand"):
+		print("fire wand")
 
 	velocity = velocity.normalized() * speed
 	move_and_collide(velocity)
