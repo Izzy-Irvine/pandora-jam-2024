@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://14kjfho0okcf"]
+[gd_scene load_steps=4 format=3 uid="uid://14kjfho0okcf"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_fkbtj"]
+[ext_resource type="Texture2D" uid="uid://cxl405wgg3mv3" path="res://sprites/player/witch_attack_01 - Tagu.png" id="1_ojou7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j6aoq"]
+size = Vector2(20, 29)
 
 [node name="Player" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_fkbtj")
+
+[node name="WitchAttack01-Tagu" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_ojou7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_j6aoq")

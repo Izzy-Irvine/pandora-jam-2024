@@ -2,6 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://dwdteq2b77s3d" path="res://scenes/level/background.tscn" id="1_7owln"]
 
-[node name="Scene" type="Node2D"]
+[node name="Level" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource("1_7owln")]
