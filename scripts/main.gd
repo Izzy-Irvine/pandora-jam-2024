@@ -10,7 +10,7 @@ func _ready():
 	level = $Level
 
 	var screen_width = get_viewport().size.x
-	screen_amount = screen_width / 3  # Amount to scroll
+	screen_amount = screen_width / 4  # Amount to scroll
 
 
 func _on_player_scroll_right(delta):

@@ -7,16 +7,16 @@
 [node name="Background" type="Node2D"]
 
 [node name="BackgroundGraveyardSkyTilable-Tagu" type="Sprite2D" parent="."]
-scale = Vector2(10, 6)
+scale = Vector2(10, 10)
 texture = ExtResource("1_fq7l8")
 centered = false
 
 [node name="BackgroundGraveyardFrontTilable-Tagu" type="Sprite2D" parent="."]
-scale = Vector2(10, 6)
+scale = Vector2(10, 10)
 texture = ExtResource("2_ysi1c")
 centered = false
 
 [node name="BackgroundGraveyardBackTilable-Tagu" type="Sprite2D" parent="."]
-scale = Vector2(10, 6)
+scale = Vector2(10, 10)
 texture = ExtResource("3_xk64p")
 centered = false
