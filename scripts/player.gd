@@ -58,6 +58,8 @@ func _process(delta):
 
 	velocity = velocity.normalized() * speed
 	move_and_collide(velocity)
+	
+	$Sprite2D.flip_h = velocity.x < 0
 
 func hurt(damage):
 	health -= damage
