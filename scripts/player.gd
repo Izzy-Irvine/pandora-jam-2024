@@ -42,10 +42,10 @@ func _process(delta):
 			velocity.y += 1
 	if Input.is_action_pressed("ui_up"):
 		if global_position.y > up_max:
-			velocity.y -= 1
+			velocity.y -= 0.6
 			
 	if Input.is_action_pressed("fire_gun") and fire_timeout == 0:
-		fire_timeout = 0.3
+		fire_timeout = 0.2
 		var bullet = bullet_scene.instantiate()
 		bullet.position = position
 		get_parent().add_child(bullet)

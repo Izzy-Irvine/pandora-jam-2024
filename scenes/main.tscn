@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://g12ul62mede4"]
+[gd_scene load_steps=6 format=3 uid="uid://g12ul62mede4"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_2alvn"]
 [ext_resource type="PackedScene" uid="uid://14kjfho0okcf" path="res://scenes/player/player.tscn" id="1_qghfo"]
@@ -20,7 +20,6 @@ scale = Vector2(7, 7)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_4m7fr")
 volume_db = -15.928
-autoplay = true
 parameters/looping = false
 
 [node name="Ui" parent="." instance=ExtResource("4_o67c0")]
