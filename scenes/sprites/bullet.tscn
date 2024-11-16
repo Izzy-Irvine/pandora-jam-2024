@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bcvtltli0c10m"]
+[gd_scene load_steps=5 format=3 uid="uid://bcvtltli0c10m"]
 
 [ext_resource type="Script" path="res://scenes/sprites/bullet.gd" id="1_l84nv"]
 [ext_resource type="Texture2D" uid="uid://bwe7l4ex8tvbp" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/Bullet2 - Licanos.png" id="1_xwnov"]
+[ext_resource type="AudioStream" uid="uid://crul4og61u6m8" path="res://Pandora Jam assets edited/Piou - Novareon 45 trimed.wav" id="3_hkcpc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m2hi4"]
 size = Vector2(20, 13)
@@ -15,3 +16,7 @@ texture = ExtResource("1_xwnov")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_m2hi4")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_hkcpc")
+autoplay = true
