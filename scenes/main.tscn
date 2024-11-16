@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://g12ul62mede4"]
+[gd_scene load_steps=5 format=3 uid="uid://g12ul62mede4"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_2alvn"]
 [ext_resource type="PackedScene" uid="uid://14kjfho0okcf" path="res://scenes/player/player.tscn" id="1_qghfo"]
 [ext_resource type="PackedScene" uid="uid://7qrm8boldaej" path="res://scenes/level/level.tscn" id="1_qtwae"]
+[ext_resource type="AudioStream" uid="uid://dao5bs7l7tfdt" path="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/9_Boss_1_Master - Nicolas NONYME.mp3" id="4_4m7fr"]
 
 [node name="Main" type="Node2D"]
 texture_filter = 1
@@ -14,3 +15,9 @@ position = Vector2(478, 307)
 scale = Vector2(7, 7)
 
 [node name="Level" parent="." instance=ExtResource("1_qtwae")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_4m7fr")
+volume_db = -15.928
+autoplay = true
+parameters/looping = false

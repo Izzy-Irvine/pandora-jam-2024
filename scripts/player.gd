@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 var bullet_scene = preload("res://scenes/sprites/bullet.tscn")
+var magic_bullet_scene = preload("res://scenes/sprites/magicBullet.tscn")
 
 # Declare member variables here. Examples:
 var speed = 10
@@ -9,6 +10,8 @@ var screen_height
 var screen_margin
 var up_max = 120
 var sprite_size
+
+var fire_timeout = 0
 
 signal scroll_right(delta)
 
@@ -21,6 +24,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	fire_timeout = max(fire_timeout - delta, 0)
 	velocity = Vector2()
 
 	if Input.is_action_pressed("ui_right"):
@@ -39,14 +43,17 @@ func _process(delta):
 		if global_position.y > up_max:
 			velocity.y -= 1
 			
-	if Input.is_action_pressed("fire_gun"):
+	if Input.is_action_pressed("fire_gun") and fire_timeout == 0:
+		fire_timeout = 0.3
 		var bullet = bullet_scene.instantiate()
 		bullet.position = position
 		get_parent().add_child(bullet)
-		print("fire bullet")
 	
-	if Input.is_action_pressed("fire_wand"):
-		print("fire wand")
+	if Input.is_action_pressed("fire_wand") and fire_timeout == 0:
+		fire_timeout = 1
+		var bullet = magic_bullet_scene.instantiate()
+		bullet.position = position
+		get_parent().add_child(bullet)
 
 	velocity = velocity.normalized() * speed
 	move_and_collide(velocity)

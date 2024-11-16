@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://db63n0fuhkjxk"]
+[gd_scene load_steps=10 format=3 uid="uid://db63n0fuhkjxk"]
 
+[ext_resource type="Script" path="res://scenes/sprites/magic_bullet.gd" id="1_74j8q"]
 [ext_resource type="Texture2D" uid="uid://contotr20bbjn" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_01 - Tagu(1).png" id="1_vq5s7"]
 [ext_resource type="Texture2D" uid="uid://dhrlg8fiq8hgl" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_02 - Tagu(1).png" id="2_i5pba"]
 [ext_resource type="Texture2D" uid="uid://bxbexldr0rbft" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_05 - Tagu(1).png" id="3_bp7po"]
 [ext_resource type="Texture2D" uid="uid://c5178kd5knhew" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_04 - Tagu(1).png" id="4_bnaxr"]
 [ext_resource type="Texture2D" uid="uid://cs3p36s0jdl84" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/feu_03 - Tagu(1).png" id="5_bkedn"]
+[ext_resource type="AudioStream" uid="uid://16kg27c6tnh2" path="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/Jimauve_Attack2 - guillaume Jimauve.mp3" id="7_7h20k"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7pngn"]
 animations = [{
@@ -26,12 +28,13 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 20.0
+"speed": 14.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3g3tu"]
 
 [node name="MagicBullet" type="Node2D"]
+script = ExtResource("1_74j8q")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-11, 1)
@@ -42,3 +45,7 @@ sprite_frames = SubResource("SpriteFrames_7pngn")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, 1)
 shape = SubResource("CircleShape2D_3g3tu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_7h20k")
+autoplay = true

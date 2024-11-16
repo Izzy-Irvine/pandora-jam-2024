@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://crul4og61u6m8"
+path="res://.godot/imported/Piou - Novareon 45 trimed.wav-61b259efc1770fe9c75d8b049c3f4ba6.sample"
+
+[deps]
+
+source_file="res://Pandora Jam assets edited/Piou - Novareon 45 trimed.wav"
+dest_files=["res://.godot/imported/Piou - Novareon 45 trimed.wav-61b259efc1770fe9c75d8b049c3f4ba6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
