@@ -6,6 +6,7 @@
 [node name="Level" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource("1_7owln")]
+position = Vector2(-5, -586)
 
 [node name="Enemy" parent="." instance=ExtResource("2_yaqj5")]
 position = Vector2(1243, 538)
