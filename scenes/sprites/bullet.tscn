@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcvtltli0c10m"]
+
+[ext_resource type="Texture2D" uid="uid://bwe7l4ex8tvbp" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/Bullet2 - Licanos.png" id="1_xwnov"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2hi4"]
+size = Vector2(20, 13)
+
+[node name="Bullet" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xwnov")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_m2hi4")
