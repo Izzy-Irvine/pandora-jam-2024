@@ -1,7 +1,36 @@
-[gd_scene load_steps=2 format=3 uid="uid://7qrm8boldaej"]
+[gd_scene load_steps=3 format=3 uid="uid://7qrm8boldaej"]
 
 [ext_resource type="PackedScene" uid="uid://dwdteq2b77s3d" path="res://scenes/level/background.tscn" id="1_7owln"]
+[ext_resource type="PackedScene" uid="uid://biiq6qbe0j6ef" path="res://scenes/enemy/enemy.tscn" id="2_yaqj5"]
 
 [node name="Level" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource("1_7owln")]
+
+[node name="Enemy" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(1243, 538)
+scale = Vector2(4, 4)
+
+[node name="Enemy2" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(1370, 296)
+scale = Vector2(4, 4)
+
+[node name="Enemy3" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(1540, 408)
+scale = Vector2(4, 4)
+
+[node name="Enemy4" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(1684, 525)
+scale = Vector2(4, 4)
+
+[node name="Enemy5" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(1803, 279)
+scale = Vector2(4, 4)
+
+[node name="Enemy6" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(1803, 279)
+scale = Vector2(4, 4)
+
+[node name="Enemy7" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(1987, 425)
+scale = Vector2(4, 4)
