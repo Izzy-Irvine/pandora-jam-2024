@@ -17,8 +17,8 @@ var fire_timeout = 0
 signal scroll_right(delta)
 
 func _ready():
-	screen_width = get_viewport().size.x
-	screen_height = get_viewport().size.y
+	screen_width = get_viewport().get_visible_rect().size.x
+	screen_height = get_viewport().get_visible_rect().size.y
 	var external_scale = get_node("/root/Main").get_node("Player").scale
 	sprite_size = $Sprite2D.texture.get_size() * external_scale
 	screen_margin = screen_width / 4  # Distance from the edge of the screen to start scrolling
