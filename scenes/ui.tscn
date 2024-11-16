@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmv6cy44pa8ee"]
+
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_rsv1w"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_a88r0"]
+font_size = 42
+
+[node name="Ui" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_rsv1w")
+
+[node name="HealthLabel" type="Label" parent="Control"]
+layout_mode = 1
+offset_right = 52.0
+offset_bottom = 23.0
+text = "Health"
+label_settings = SubResource("LabelSettings_a88r0")
+horizontal_alignment = 2
