@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-var bullet_scene = preload("res://scenes/sprites/bullet.tscn")
-var magic_bullet_scene = preload("res://scenes/sprites/magicBullet.tscn")
+var bullet_scene = preload("res://scenes/projectiles/bullet.tscn")
+var magic_bullet_scene = preload("res://scenes/projectiles/magic_bullet.tscn")
 
 # Declare member variables here. Examples:
 var speed = 10
