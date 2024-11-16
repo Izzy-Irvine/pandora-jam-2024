@@ -48,18 +48,23 @@ func _process(delta):
 		fire_timeout = 0.2
 		var bullet = bullet_scene.instantiate()
 		bullet.position = position
+		bullet.flipped = $Sprite2D.flip_h
 		get_parent().add_child(bullet)
 	
 	if Input.is_action_pressed("fire_wand") and fire_timeout == 0:
 		fire_timeout = 1
 		var bullet = magic_bullet_scene.instantiate()
 		bullet.position = position
+		bullet.flipped = $Sprite2D.flip_h
 		get_parent().add_child(bullet)
 
 	velocity = velocity.normalized() * speed
 	move_and_collide(velocity)
 	
-	$Sprite2D.flip_h = velocity.x < 0
+	if velocity.x < 0 and not $Sprite2D.flip_h:
+		$Sprite2D.flip_h = true
+	elif velocity.x > 0 and $Sprite2D.flip_h:
+		$Sprite2D.flip_h = false
 
 func hurt(damage):
 	health -= damage
