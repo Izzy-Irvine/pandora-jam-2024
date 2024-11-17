@@ -79,7 +79,7 @@ func damage(damage):
 		knocked_back = true
 		var distance = global_position.x - player.global_position.x
 		var current_dir = sign(distance)
-		velocity = knockback_strength * current_dir
+		velocity = knockback_strength * (4 / scale.x) * current_dir
 		#reduce_speed()
 
 func reduce_speed():
