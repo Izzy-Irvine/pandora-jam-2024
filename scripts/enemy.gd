@@ -86,7 +86,7 @@ func damage(damage):
 	
 	if health <= 0:
 		die()
-  else:
+	else:
 		$AnimatedSprite2D.play("damage")
 
 	knocked_back = true
