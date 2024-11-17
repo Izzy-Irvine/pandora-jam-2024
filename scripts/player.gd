@@ -36,32 +36,33 @@ func _process(delta):
 	velocity = Vector2()
 	
 	is_walking = false
+	var dead = health <= 0
 	
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("ui_right") and not dead:
 		$AnimatedSprite2D.play("walk")
 		is_walking = true
 		if global_position.x > screen_width - screen_margin:
 			emit_signal("scroll_right", delta)
 		else:
 			velocity.x = 1
-	elif Input.is_action_pressed("ui_left"):
+	elif Input.is_action_pressed("ui_left") and not dead:
 		$AnimatedSprite2D.play("walk")
 		is_walking = true
 		if global_position.x > (sprite_size.x / 2):
 			velocity.x = -1
 
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("ui_down") and not dead:
 		$AnimatedSprite2D.play("walk")
 		is_walking = true
 		if global_position.y < screen_height - (sprite_size.y / 2):
 			velocity.y = 1
-	elif Input.is_action_pressed("ui_up"):
+	elif Input.is_action_pressed("ui_up") and not dead:
 		$AnimatedSprite2D.play("walk")
 		is_walking = true
 		if global_position.y > up_max:
 			velocity.y = -0.6
 	
-	if Input.is_action_pressed("fire_gun") and cur_gun_timeout == 0 and cur_magic_timeout == 0:
+	if Input.is_action_pressed("fire_gun") and cur_gun_timeout == 0 and cur_magic_timeout == 0 and not dead:
 		$AnimatedSprite2D.play("gun_attack")
 		cur_gun_timeout = gun_timeout
 		var bullet = bullet_scene.instantiate()
@@ -70,7 +71,7 @@ func _process(delta):
 		bullet.flipped = $AnimatedSprite2D.scale.x == -1
 		get_parent().add_child(bullet)
 	
-	if Input.is_action_pressed("fire_wand") and cur_gun_timeout == 0 and cur_magic_timeout == 0:
+	if Input.is_action_pressed("fire_wand") and cur_gun_timeout == 0 and cur_magic_timeout == 0 and not dead:
 		$AnimatedSprite2D.play("magic_attack")
 		cur_magic_timeout = magic_timeout
 		var bullet = magic_bullet_scene.instantiate()
@@ -89,13 +90,19 @@ func _process(delta):
 		$AnimatedSprite2D.scale.x = 1
 
 func hurt(damage):
-	health -= damage
 	if health <= 0:
-		get_tree().quit()
+		return
+		
+	health -= damage
+	
+	if health <= 0:
+		$AnimatedSprite2D.play("death")
 
 
 func _on_animated_sprite_2d_animation_finished() -> void:
-	if is_walking:
+	if $AnimatedSprite2D.animation == "death":
+		get_tree().change_scene_to_file("res://scenes/game_over_screen.tscn")
+	elif is_walking:
 		$AnimatedSprite2D.play("walk")
 	else:
 		$AnimatedSprite2D.play("idle")
