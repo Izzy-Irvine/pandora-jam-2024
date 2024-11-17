@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://q87t4uicb0ad"]
+
+[ext_resource type="Texture2D" uid="uid://6h6dourp4l2s" path="res://sprites/Title/Title_Background.png" id="1_7ofqs"]
+[ext_resource type="Texture2D" uid="uid://ypjq103newem" path="res://sprites/Title/Title_Start.png" id="2_wf5on"]
+[ext_resource type="Texture2D" uid="uid://cu83m084jnk58" path="res://sprites/Title/Title_Start_Hover.png" id="3_6baa7"]
+[ext_resource type="Script" path="res://scenes/start_button.gd" id="4_2e6yl"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_hmspv"]
+action = &"ui_accept"
+
+[sub_resource type="Shortcut" id="Shortcut_nsi4e"]
+events = [SubResource("InputEventAction_hmspv")]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7ofqs")
+stretch_mode = 6
+
+[node name="Start Button" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -174.0
+offset_top = -197.0
+offset_right = -58.0
+offset_bottom = -147.78
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(3, 3)
+shortcut = SubResource("Shortcut_nsi4e")
+texture_normal = ExtResource("2_wf5on")
+texture_hover = ExtResource("3_6baa7")
+script = ExtResource("4_2e6yl")
+
+[connection signal="pressed" from="Start Button" to="Start Button" method="_on_pressed"]
