@@ -71,7 +71,7 @@ func _process(delta):
 		bullet.flipped = $AnimatedSprite2D.scale.x == -1
 		get_parent().add_child(bullet)
 	
-	if Input.is_action_pressed("fire_wand") and cur_gun_timeout == 0 and cur_magic_timeout == 0 and not dead:
+	if Input.is_action_just_pressed("fire_wand") and cur_gun_timeout == 0 and cur_magic_timeout == 0 and not dead:
 		$AnimatedSprite2D.play("magic_attack")
 		cur_magic_timeout = magic_timeout
 		var bullet = magic_bullet_scene.instantiate()
