@@ -4,18 +4,18 @@ var bullet_scene = preload("res://scenes/projectiles/bullet.tscn")
 var magic_bullet_scene = preload("res://scenes/projectiles/magic_bullet.tscn")
 
 # Declare member variables here. Examples:
-var speed = 10
+var speed = 5
 var screen_width 
 var screen_height 
 var screen_margin
-var up_max = 120
+@export var up_max = 200
 var sprite_size
-var health = 100
+@export var health = 100
 
 var cur_gun_timeout = 0
-var gun_timeout = 0.2
+@export var gun_timeout = 0.2
 var cur_magic_timeout = 0
-var magic_timeout = 1
+@export var magic_timeout = 1
 
 var is_walking = false
 
@@ -26,7 +26,7 @@ func _ready():
 	screen_height = get_viewport().get_visible_rect().size.y
 	var external_scale = get_node("/root/Main").get_node("Player").scale
 	sprite_size = $CollisionShape2D.shape.get_rect().size * external_scale
-	screen_margin = screen_width / 4  # Distance from the edge of the screen to start scrolling
+	screen_margin = screen_width / 2  # Distance from the edge of the screen to start scrolling
 	$AnimatedSprite2D.play("idle")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -41,10 +41,7 @@ func _process(delta):
 	if Input.is_action_pressed("ui_right") and not dead:
 		$AnimatedSprite2D.play("walk")
 		is_walking = true
-		if global_position.x > screen_width - screen_margin:
-			emit_signal("scroll_right", delta)
-		else:
-			velocity.x = 1
+		velocity.x = 1
 	elif Input.is_action_pressed("ui_left") and not dead:
 		$AnimatedSprite2D.play("walk")
 		is_walking = true
@@ -83,6 +80,10 @@ func _process(delta):
 
 	velocity = velocity.normalized() * speed
 	move_and_collide(velocity)
+
+	if global_position.x > screen_width - screen_margin:
+		emit_signal("scroll_right", global_position.x - (screen_width - screen_margin))
+		global_position.x = screen_width - screen_margin
 	
 	if velocity.x < 0:
 		$AnimatedSprite2D.scale.x = -1

@@ -34,6 +34,9 @@ func _process(delta: float) -> void:
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
 	$AnimatedSprite2D.play("wake")
+	if not active and not dead:
+		$"UwuSfx-JulienBarlet(m0UfTchup)".pitch_scale = randf_range(0.9, 1.1)
+		$"UwuSfx-JulienBarlet(m0UfTchup)".play()
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	#queue_free()
@@ -64,6 +67,7 @@ func move(delta: float):
 
 func die():
 	dead = true
+	$AudioStreamPlayer.pitch_scale = randf_range(0.8, 1.2)
 	$AudioStreamPlayer.play(0)
 	$AnimatedSprite2D.play("die")
 

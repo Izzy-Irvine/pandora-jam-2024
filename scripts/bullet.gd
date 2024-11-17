@@ -2,7 +2,7 @@ extends Node2D
 
 var flipped = false
 var lifetime = 0.0
-@export var max_damage = 1.5
+@export var max_damage = 3
 @export var min_damage = 0.1
 @export var expected_lifetimme = 0.33 
 
