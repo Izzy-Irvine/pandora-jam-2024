@@ -48,12 +48,15 @@ func _process(delta):
 		fire_timeout = 0.2
 		var bullet = bullet_scene.instantiate()
 		bullet.position = position
+		bullet.z_index = -1
 		bullet.flipped = $Sprite2D.flip_h
 		get_parent().add_child(bullet)
 	
 	if Input.is_action_pressed("fire_wand") and fire_timeout == 0:
 		fire_timeout = 1
 		var bullet = magic_bullet_scene.instantiate()
+		bullet.scale = Vector2(2, 2)
+		bullet.z_index = -1
 		bullet.position = position
 		bullet.flipped = $Sprite2D.flip_h
 		get_parent().add_child(bullet)
