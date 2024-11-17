@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ff8u5bbjlssx"
-path="res://.godot/imported/Title_Start.png-b22c6f9152ebdef339dd5973c0e296a6.ctex"
+uid="uid://cigt66y0qg5pj"
+path="res://.godot/imported/Gobber_Hit_Flame_4.png-24170e81257aabe496d174100367b27b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Title/Title_Start.png"
-dest_files=["res://.godot/imported/Title_Start.png-b22c6f9152ebdef339dd5973c0e296a6.ctex"]
+source_file="res://sprites/Gobber_Hit/Goober_Hit_Flame/Gobber_Hit_Flame_4.png"
+dest_files=["res://.godot/imported/Gobber_Hit_Flame_4.png-24170e81257aabe496d174100367b27b.ctex"]
 
 [params]
 

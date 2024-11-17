@@ -80,6 +80,7 @@ func damage(damage):
 	if health <= 0:
 		die()
 	else:
+		$AnimatedSprite2D.play("damage")
 		knocked_back = true
 		var distance = global_position.x - player.global_position.x
 		var current_dir = sign(distance)
@@ -97,7 +98,7 @@ func _on_speed_reduction_timeout():
 	speed_reduced = false
 
 func _on_animated_sprite_2d_animation_finished() -> void:
-	if $AnimatedSprite2D.animation == "wake":
+	if $AnimatedSprite2D.animation in ["wake", "damage"]:
 		active = true
 		$AnimatedSprite2D.play("run")
 

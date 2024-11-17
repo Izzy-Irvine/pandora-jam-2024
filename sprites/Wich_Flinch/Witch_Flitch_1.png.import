@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ff8u5bbjlssx"
-path="res://.godot/imported/Title_Start.png-b22c6f9152ebdef339dd5973c0e296a6.ctex"
+uid="uid://b2cbtgag0puxp"
+path="res://.godot/imported/Witch_Flitch_1.png-42b304126e2be034073783c058cffc44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Title/Title_Start.png"
-dest_files=["res://.godot/imported/Title_Start.png-b22c6f9152ebdef339dd5973c0e296a6.ctex"]
+source_file="res://sprites/Wich_Flinch/Witch_Flitch_1.png"
+dest_files=["res://.godot/imported/Witch_Flitch_1.png-42b304126e2be034073783c058cffc44.ctex"]
 
 [params]
 
