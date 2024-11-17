@@ -25,6 +25,8 @@ var invincibility_timer = 0
 var fire_cooldown = 0.4
 var fire_cooldown_timer = 0
 
+var amount_scolled = 0
+
 signal scroll_right(delta)
 
 func _ready():
@@ -48,7 +50,8 @@ func _process(delta):
 	if Input.is_action_pressed("ui_right") and not dead:
 		$AnimatedSprite2D.play("walk")
 		is_walking = true
-		velocity.x = 1
+		if global_position.x < screen_width - (sprite_size.x / 2):
+			velocity.x = 1
 	elif Input.is_action_pressed("ui_left") and not dead:
 		$AnimatedSprite2D.play("walk")
 		is_walking = true
@@ -89,8 +92,11 @@ func _process(delta):
 	move_and_collide(velocity)
 
 	if global_position.x > screen_width - screen_margin:
-		emit_signal("scroll_right", global_position.x - (screen_width - screen_margin))
-		global_position.x = screen_width - screen_margin
+		if amount_scolled + (screen_margin + screen_width) <= 12800: # magic number bs
+			print(amount_scolled + (screen_margin + screen_width))
+			emit_signal("scroll_right", global_position.x - (screen_width - screen_margin))
+			amount_scolled += global_position.x - (screen_width - screen_margin)
+			global_position.x = screen_width - screen_margin
 	
 	if velocity.x < 0:
 		$AnimatedSprite2D.scale.x = -1
