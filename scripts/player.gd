@@ -17,8 +17,8 @@ var fire_timeout = 0
 signal scroll_right(delta)
 
 func _ready():
-	screen_width = get_viewport().size.x
-	screen_height = get_viewport().size.y
+	screen_width = get_viewport().get_visible_rect().size.x
+	screen_height = get_viewport().get_visible_rect().size.y
 	var external_scale = get_node("/root/Main").get_node("Player").scale
 	sprite_size = $CollisionShape2D.shape.get_rect().size * external_scale
 	screen_margin = screen_width / 4  # Distance from the edge of the screen to start scrolling
@@ -53,12 +53,15 @@ func _process(delta):
 		fire_timeout = 0.2
 		var bullet = bullet_scene.instantiate()
 		bullet.position = position
+		bullet.z_index = -1
 		bullet.flipped = $AnimatedSprite2D.scale.x == -1
 		get_parent().add_child(bullet)
 	
 	if Input.is_action_pressed("fire_wand") and fire_timeout == 0:
 		fire_timeout = 1
 		var bullet = magic_bullet_scene.instantiate()
+		bullet.scale = Vector2(2, 2)
+		bullet.z_index = -1
 		bullet.position = position
 		bullet.flipped = $AnimatedSprite2D.scale.x == -1
 		get_parent().add_child(bullet)
