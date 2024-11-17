@@ -48,6 +48,411 @@ scale = Vector2(4, 4)
 position = Vector2(4010, 290)
 scale = Vector2(4, 4)
 
+[node name="Enemy16" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4561, 443)
+scale = Vector2(7, 7)
+max_velocity = 210
+overshoot_distance = 440
+health = 20
+
+[node name="Enemy17" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 335)
+scale = Vector2(4, 4)
+
+[node name="Enemy18" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 418)
+scale = Vector2(4, 4)
+
+[node name="Enemy19" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 484)
+scale = Vector2(4, 4)
+
+[node name="Enemy20" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 557)
+scale = Vector2(4, 4)
+
+[node name="Enemy21" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 623)
+scale = Vector2(4, 4)
+
+[node name="Enemy22" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 332)
+scale = Vector2(4, 4)
+
+[node name="Enemy23" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 415)
+scale = Vector2(4, 4)
+
+[node name="Enemy24" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 481)
+scale = Vector2(4, 4)
+
+[node name="Enemy25" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 554)
+scale = Vector2(4, 4)
+
+[node name="Enemy26" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 620)
+scale = Vector2(4, 4)
+
+[node name="Enemy63" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 335)
+scale = Vector2(4, 4)
+
+[node name="Enemy64" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 418)
+scale = Vector2(4, 4)
+
+[node name="Enemy65" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 484)
+scale = Vector2(4, 4)
+
+[node name="Enemy66" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 557)
+scale = Vector2(4, 4)
+
+[node name="Enemy67" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4984, 623)
+scale = Vector2(4, 4)
+
+[node name="Enemy73" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 409)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy74" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 492)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy75" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 558)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy76" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 631)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy77" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 697)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy83" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 409)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy84" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 492)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy85" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 558)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy86" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 631)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy87" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(8406, 697)
+scale = Vector2(1.79, 1.79)
+max_velocity = 1000
+health = 3
+
+[node name="Enemy68" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 332)
+scale = Vector2(4, 4)
+
+[node name="Enemy69" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 415)
+scale = Vector2(4, 4)
+
+[node name="Enemy70" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 481)
+scale = Vector2(4, 4)
+
+[node name="Enemy71" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 554)
+scale = Vector2(4, 4)
+
+[node name="Enemy72" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5095, 620)
+scale = Vector2(4, 4)
+
+[node name="Enemy78" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy79" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy80" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy81" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy82" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy37" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12485, 351)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy38" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12485, 434)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy39" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12485, 500)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy40" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12485, 573)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy41" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12485, 639)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy42" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12452, 257)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy43" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12452, 340)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy44" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12452, 406)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy45" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12452, 479)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy46" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12452, 545)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy47" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12541, 356)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy48" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12541, 439)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy49" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12541, 505)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy50" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12541, 578)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy51" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12541, 644)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy52" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12450, 371)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy53" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12450, 454)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy54" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12450, 520)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy55" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12450, 593)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy56" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12450, 659)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy57" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12531, 353)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy58" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12531, 436)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy59" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12531, 502)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy60" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12531, 575)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy61" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(12513, 245)
+scale = Vector2(4, 4)
+max_velocity = 820
+overshoot_distance = 85
+health = 95
+
+[node name="Enemy27" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5715, 355)
+scale = Vector2(4, 4)
+
+[node name="Enemy28" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5445, 463)
+scale = Vector2(4, 4)
+
+[node name="Enemy29" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5728, 627)
+scale = Vector2(4, 4)
+
+[node name="Enemy30" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5889, 531)
+scale = Vector2(4, 4)
+
+[node name="Enemy32" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(6149, 392)
+scale = Vector2(4, 4)
+
+[node name="Enemy33" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(6146, 548)
+scale = Vector2(4, 4)
+
+[node name="Enemy34" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(6146, 687)
+scale = Vector2(4, 4)
+
+[node name="Enemy35" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(6285, 558)
+scale = Vector2(4, 4)
+
+[node name="Enemy36" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(6323, 397)
+scale = Vector2(4, 4)
+
+[node name="Enemy31" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(5531, 635)
+scale = Vector2(4, 4)
+
+[node name="Enemy62" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7556, 558)
+scale = Vector2(15, 15)
+max_velocity = 120
+overshoot_distance = 350
+health = 50
+attack_strength = 40
+
 [node name="Enemy12" parent="." instance=ExtResource("2_yaqj5")]
 position = Vector2(4015, 441)
 scale = Vector2(4, 4)
@@ -55,3 +460,528 @@ scale = Vector2(4, 4)
 [node name="Enemy13" parent="." instance=ExtResource("2_yaqj5")]
 position = Vector2(4018, 547)
 scale = Vector2(4, 4)
+
+[node name="Enemy88" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy88" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 420)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy89" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 503)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy90" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 569)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy91" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 642)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
+
+[node name="Enemy92" parent="Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92/Enemy92" instance=ExtResource("2_yaqj5")]
+position = Vector2(7380, 708)
+scale = Vector2(4, 4)
+max_velocity = 700
+health = 3
+attack_strength = 10
