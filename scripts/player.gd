@@ -8,7 +8,7 @@ var speed = 10
 var screen_width 
 var screen_height 
 var screen_margin
-var up_max = 120
+var up_max = 200
 var sprite_size
 var health = 100
 
@@ -26,7 +26,7 @@ func _ready():
 	screen_height = get_viewport().get_visible_rect().size.y
 	var external_scale = get_node("/root/Main").get_node("Player").scale
 	sprite_size = $CollisionShape2D.shape.get_rect().size * external_scale
-	screen_margin = screen_width / 4  # Distance from the edge of the screen to start scrolling
+	screen_margin = screen_width / 2  # Distance from the edge of the screen to start scrolling
 	$AnimatedSprite2D.play("idle")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

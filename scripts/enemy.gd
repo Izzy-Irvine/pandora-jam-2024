@@ -61,9 +61,9 @@ func move(delta: float):
 
 
 func die():
-       dead = true
-       $AudioStreamPlayer.play(0)
-       $AnimatedSprite2D.play("die")
+	dead = true
+	$AudioStreamPlayer.play(0)
+	$AnimatedSprite2D.play("die")
 
 
 func damage(damage): 

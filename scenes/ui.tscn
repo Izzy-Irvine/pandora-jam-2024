@@ -27,6 +27,7 @@ label_settings = SubResource("LabelSettings_a88r0")
 horizontal_alignment = 2
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
 offset_top = 60.0
 offset_right = 40.0
 offset_bottom = 100.0

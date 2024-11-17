@@ -9,25 +9,49 @@ position = Vector2(1243, 538)
 scale = Vector2(4, 4)
 
 [node name="Enemy2" parent="." instance=ExtResource("2_yaqj5")]
-position = Vector2(1370, 296)
+position = Vector2(1758, 277)
 scale = Vector2(4, 4)
 
 [node name="Enemy3" parent="." instance=ExtResource("2_yaqj5")]
-position = Vector2(1540, 408)
+position = Vector2(2265, 396)
 scale = Vector2(4, 4)
 
 [node name="Enemy4" parent="." instance=ExtResource("2_yaqj5")]
-position = Vector2(1684, 525)
+position = Vector2(2264, 532)
 scale = Vector2(4, 4)
 
 [node name="Enemy5" parent="." instance=ExtResource("2_yaqj5")]
-position = Vector2(1803, 279)
+position = Vector2(2676, 298)
 scale = Vector2(4, 4)
 
 [node name="Enemy6" parent="." instance=ExtResource("2_yaqj5")]
-position = Vector2(1803, 279)
+position = Vector2(2676, 298)
 scale = Vector2(4, 4)
 
 [node name="Enemy7" parent="." instance=ExtResource("2_yaqj5")]
-position = Vector2(1987, 425)
+position = Vector2(2860, 444)
+scale = Vector2(4, 4)
+
+[node name="Enemy8" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(3140, 567)
+scale = Vector2(4, 4)
+
+[node name="Enemy9" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(3143, 373)
+scale = Vector2(4, 4)
+
+[node name="Enemy10" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(3574, 461)
+scale = Vector2(4, 4)
+
+[node name="Enemy11" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4010, 290)
+scale = Vector2(4, 4)
+
+[node name="Enemy12" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4015, 441)
+scale = Vector2(4, 4)
+
+[node name="Enemy13" parent="." instance=ExtResource("2_yaqj5")]
+position = Vector2(4018, 547)
 scale = Vector2(4, 4)
