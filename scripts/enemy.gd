@@ -6,9 +6,11 @@ extends Node2D
 @export var health = 5
 @export var speed_reduction_time = 0.25
 @export var attack_strength = 20
+@export var knockback_strength = 750
 
 var velocity = 0
 var direction = -1
+var knocked_back = false
 
 var active = false
 var dead = false
@@ -38,29 +40,42 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	pass
 
 func move(delta: float):
-	$AnimatedSprite2D.flip_h = velocity <= 0
+	if not knocked_back:
+		$AnimatedSprite2D.flip_h = velocity <= 0
 	
 	var distance = global_position.x - player.global_position.x
 	var current_dir = -sign(distance)
 	
 	if abs(distance) >= overshoot_distance and current_dir != direction:
 		direction *= -1
-	
-	velocity += acceleration * direction * delta
-	velocity = clamp(velocity, -max_velocity, max_velocity)
-	
+
+	if knocked_back:
+		velocity = move_toward(velocity, 0, acceleration * delta)
+		if velocity == 0:
+			knocked_back = false
+	else:	
+		velocity += acceleration * direction * delta
+		velocity = clamp(velocity, -max_velocity, max_velocity)
+		
 	position.x += velocity * delta
+
 
 func die():
 	dead = true
 	$AnimatedSprite2D.play("die")
 
+
 func damage(damage): 
 	health -= damage
+	
 	if health <= 0:
 		die()
 	else:
-		reduce_speed()
+		knocked_back = true
+		var distance = global_position.x - player.global_position.x
+		var current_dir = sign(distance)
+		velocity = knockback_strength * current_dir
+		#reduce_speed()
 
 func reduce_speed():
 	if not speed_reduced:
