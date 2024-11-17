@@ -27,12 +27,14 @@ func _ready() -> void:
 	add_child(speed_reduction_timer)
 
 func _process(delta: float) -> void:
-	if active and not dead:
+	if active:
 		move(delta)
-	if dead and not $VisibleOnScreenNotifier2D.is_on_screen():
-		queue_free()
+	# if dead and not $VisibleOnScreenNotifier2D.is_on_screen():
+		# queue_free()
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
+	if dead:
+		return
 	$AnimatedSprite2D.play("wake")
 	if not active and not dead:
 		$"UwuSfx-JulienBarlet(m0UfTchup)".pitch_scale = randf_range(0.9, 1.1)
@@ -56,12 +58,17 @@ func move(delta: float):
 		velocity.x = move_toward(velocity.x, 0, acceleration * delta)
 		if velocity.x == 0:
 			knocked_back = false
-	else:	
-		velocity.x += acceleration * direction * delta
-		velocity.x = clamp(velocity.x, -max_velocity.x, max_velocity.x)
+	else:
+		if not dead:
+			velocity.x += acceleration * direction * delta
+			velocity.x = clamp(velocity.x, -max_velocity.x, max_velocity.x)
 	
-	velocity.y += acceleration * current_dir.y * delta
-	velocity.y = clamp(velocity.y, -max_velocity.y, max_velocity.y)
+	if not dead:
+		velocity.y += acceleration * current_dir.y * delta
+		velocity.y = clamp(velocity.y, -max_velocity.y, max_velocity.y)
+	else:
+		velocity.y = 0
+	
 	position += velocity * delta
 
 
@@ -81,11 +88,12 @@ func damage(damage):
 		die()
 	else:
 		$AnimatedSprite2D.play("damage")
-		knocked_back = true
-		var distance = global_position.x - player.global_position.x
-		var current_dir = sign(distance)
-		velocity.x = knockback_strength * (4 / scale.x) * current_dir
-		#reduce_speed()
+
+	knocked_back = true
+	var distance = global_position.x - player.global_position.x
+	var current_dir = sign(distance)
+	velocity.x = knockback_strength * (4 / scale.x) * current_dir
+	#reduce_speed()
 
 func reduce_speed():
 	if not speed_reduced:
