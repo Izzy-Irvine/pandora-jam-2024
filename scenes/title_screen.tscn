@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://q87t4uicb0ad"]
+[gd_scene load_steps=7 format=3 uid="uid://cfjigycm13l8s"]
 
-[ext_resource type="Texture2D" uid="uid://6h6dourp4l2s" path="res://sprites/Title/Title_Background.png" id="1_7ofqs"]
-[ext_resource type="Texture2D" uid="uid://ypjq103newem" path="res://sprites/Title/Title_Start.png" id="2_wf5on"]
-[ext_resource type="Texture2D" uid="uid://cu83m084jnk58" path="res://sprites/Title/Title_Start_Hover.png" id="3_6baa7"]
+[ext_resource type="Texture2D" uid="uid://cnl25e04pb84v" path="res://sprites/Title/Title_Background.png" id="1_7ofqs"]
+[ext_resource type="Texture2D" uid="uid://ff8u5bbjlssx" path="res://sprites/Title/Title_Start.png" id="2_wf5on"]
+[ext_resource type="Texture2D" uid="uid://wh1d53g62mpk" path="res://sprites/Title/Title_Start_Hover.png" id="3_6baa7"]
 [ext_resource type="Script" path="res://scenes/start_button.gd" id="4_2e6yl"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_hmspv"]
@@ -38,10 +38,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -174.0
-offset_top = -197.0
-offset_right = -58.0
-offset_bottom = -147.78
+offset_left = -164.0
+offset_top = -165.0
+offset_right = -55.0
+offset_bottom = -135.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(3, 3)
