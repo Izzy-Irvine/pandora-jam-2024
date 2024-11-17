@@ -63,8 +63,12 @@ func move(delta: float):
 			velocity.x += acceleration * direction * delta
 			velocity.x = clamp(velocity.x, -max_velocity.x, max_velocity.x)
 	
-	velocity.y += acceleration * current_dir.y * delta
-	velocity.y = clamp(velocity.y, -max_velocity.y, max_velocity.y)
+	if not dead:
+		velocity.y += acceleration * current_dir.y * delta
+		velocity.y = clamp(velocity.y, -max_velocity.y, max_velocity.y)
+	else:
+		velocity.y = 0
+	
 	position += velocity * delta
 
 
