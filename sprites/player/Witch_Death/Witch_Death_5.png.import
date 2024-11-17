@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6pib7mgan417"
-path="res://.godot/imported/Witch_Death_5.png-c7afe833cfd0037bff78c4fb6e98b4e7.ctex"
+path="res://.godot/imported/Witch_Death_5.png-32361c7fe4e3eae4a63a1685a0b1f71b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Witch_Death/Witch_Death_5.png"
-dest_files=["res://.godot/imported/Witch_Death_5.png-c7afe833cfd0037bff78c4fb6e98b4e7.ctex"]
+source_file="res://sprites/player/Witch_Death/Witch_Death_5.png"
+dest_files=["res://.godot/imported/Witch_Death_5.png-32361c7fe4e3eae4a63a1685a0b1f71b.ctex"]
 
 [params]
 

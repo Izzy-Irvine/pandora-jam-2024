@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chck15dofeoba"
-path="res://.godot/imported/Witch_Idle_2.png-5a6633809c5bafb76356b67c9fd62a90.ctex"
+path="res://.godot/imported/Witch_Idle_2.png-4f35b64f8f157043287939af49397529.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Witch_Idle/Witch_Idle_2.png"
-dest_files=["res://.godot/imported/Witch_Idle_2.png-5a6633809c5bafb76356b67c9fd62a90.ctex"]
+source_file="res://sprites/player/Witch_Idle/Witch_Idle_2.png"
+dest_files=["res://.godot/imported/Witch_Idle_2.png-4f35b64f8f157043287939af49397529.ctex"]
 
 [params]
 

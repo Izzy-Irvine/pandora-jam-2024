@@ -1,20 +1,92 @@
-[gd_scene load_steps=4 format=3 uid="uid://14kjfho0okcf"]
+[gd_scene load_steps=16 format=3 uid="uid://14kjfho0okcf"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_fkbtj"]
-[ext_resource type="Texture2D" uid="uid://cxl405wgg3mv3" path="res://sprites/player/witch_attack_01 - Tagu.png" id="1_ojou7"]
+[ext_resource type="Texture2D" uid="uid://dpj6574l6pmq6" path="res://sprites/player/Witch_Death/Witch_Death_1.png" id="2_stdxr"]
+[ext_resource type="Texture2D" uid="uid://dxlucsr1r65aj" path="res://sprites/player/Witch_Death/Witch_Death_2.png" id="3_om2be"]
+[ext_resource type="Texture2D" uid="uid://bhiilc67wwu3b" path="res://sprites/player/Witch_Death/Witch_Death_3.png" id="4_tmfbo"]
+[ext_resource type="Texture2D" uid="uid://b43ub3ulcsuhw" path="res://sprites/player/Witch_Death/Witch_Death_4.png" id="5_1mwan"]
+[ext_resource type="Texture2D" uid="uid://c6pib7mgan417" path="res://sprites/player/Witch_Death/Witch_Death_5.png" id="6_0mv3j"]
+[ext_resource type="Texture2D" uid="uid://bst2urpp7tb6y" path="res://sprites/player/Witch_Death/Witch_Death_6.png" id="7_1qqih"]
+[ext_resource type="Texture2D" uid="uid://c2ylj7ou5cg3a" path="res://sprites/player/Witch_Shoot/Witch_Shoot_2.png" id="8_6w10f"]
+[ext_resource type="Texture2D" uid="uid://cpa0w3l23ye7a" path="res://sprites/player/Witch_Shoot/Witch_Shoot_1.png" id="9_xmclp"]
+[ext_resource type="Texture2D" uid="uid://bkuakwy3erh8j" path="res://sprites/player/Witch_Idle/Witch_Idle_1.png" id="10_lx1s5"]
+[ext_resource type="Texture2D" uid="uid://chck15dofeoba" path="res://sprites/player/Witch_Idle/Witch_Idle_2.png" id="11_544r8"]
+[ext_resource type="Texture2D" uid="uid://dbiyj5muty3ds" path="res://sprites/player/Witch_Run/Witch_Run_1.png" id="12_0inao"]
+[ext_resource type="Texture2D" uid="uid://b73wxdg4y7lbf" path="res://sprites/player/Witch_Run/Witch_Run_2.png" id="13_hlnx8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j6aoq"]
 size = Vector2(20, 29)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_soxmv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_stdxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_om2be")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_tmfbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1mwan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0mv3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1qqih")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_6w10f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xmclp")
+}],
+"loop": true,
+"name": &"gun_attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_lx1s5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_544r8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_0inao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hlnx8")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
 
 [node name="Player" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_fkbtj")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture_filter = 1
-texture = ExtResource("1_ojou7")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_j6aoq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_soxmv")
+animation = &"idle"
+frame = 1
+frame_progress = 0.657142

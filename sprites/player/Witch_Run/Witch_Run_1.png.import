@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbiyj5muty3ds"
-path="res://.godot/imported/Witch_Run_1.png-5ad441dba865dc5ada1fa2c67b4f9f5b.ctex"
+path="res://.godot/imported/Witch_Run_1.png-31b6f06cdb3898764a123ea68b114939.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Witch_Run/Witch_Run_1.png"
-dest_files=["res://.godot/imported/Witch_Run_1.png-5ad441dba865dc5ada1fa2c67b4f9f5b.ctex"]
+source_file="res://sprites/player/Witch_Run/Witch_Run_1.png"
+dest_files=["res://.godot/imported/Witch_Run_1.png-31b6f06cdb3898764a123ea68b114939.ctex"]
 
 [params]
 
