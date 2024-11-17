@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var max_velocity = 500
+@export var max_velocity = Vector2(500, 100)
 @export var acceleration = 2000
 @export var overshoot_distance = 100
 @export var health = 5
@@ -8,7 +8,7 @@ extends Node2D
 @export var attack_strength = 20
 @export var knockback_strength = 750
 
-var velocity = 0
+var velocity = Vector2()
 var direction = -1
 var knocked_back = false
 
@@ -44,23 +44,25 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 
 func move(delta: float):
 	if not knocked_back:
-		$AnimatedSprite2D.flip_h = velocity <= 0
+		$AnimatedSprite2D.flip_h = velocity.x <= 0
 	
-	var distance = global_position.x - player.global_position.x
-	var current_dir = -sign(distance)
+	var distance = global_position - player.global_position
+	var current_dir = Vector2(-sign(distance.x), -sign(distance.y))
 	
-	if abs(distance) >= overshoot_distance and current_dir != direction:
+	if abs(distance.x) >= overshoot_distance and current_dir.x != direction:
 		direction *= -1
 
 	if knocked_back:
-		velocity = move_toward(velocity, 0, acceleration * delta)
-		if velocity == 0:
+		velocity.x = move_toward(velocity.x, 0, acceleration * delta)
+		if velocity.x == 0:
 			knocked_back = false
 	else:	
-		velocity += acceleration * direction * delta
-		velocity = clamp(velocity, -max_velocity, max_velocity)
-		
-	position.x += velocity * delta
+		velocity.x += acceleration * direction * delta
+		velocity.x = clamp(velocity.x, -max_velocity.x, max_velocity.x)
+	
+	velocity.y += acceleration * current_dir.y * delta
+	velocity.y = clamp(velocity.y, -max_velocity.y, max_velocity.y)
+	position += velocity * delta
 
 
 func die():
@@ -70,7 +72,9 @@ func die():
 	$AnimatedSprite2D.play("die")
 
 
-func damage(damage): 
+func damage(damage):
+	if not active:
+		return
 	health -= damage
 	
 	if health <= 0:
@@ -79,17 +83,17 @@ func damage(damage):
 		knocked_back = true
 		var distance = global_position.x - player.global_position.x
 		var current_dir = sign(distance)
-		velocity = knockback_strength * (4 / scale.x) * current_dir
+		velocity.x = knockback_strength * (4 / scale.x) * current_dir
 		#reduce_speed()
 
 func reduce_speed():
 	if not speed_reduced:
-		max_velocity /= 2
+		max_velocity.x /= 2
 		speed_reduced = true
 		speed_reduction_timer.start()
 
 func _on_speed_reduction_timeout():
-	max_velocity *= 2
+	max_velocity.x *= 2
 	speed_reduced = false
 
 func _on_animated_sprite_2d_animation_finished() -> void:
