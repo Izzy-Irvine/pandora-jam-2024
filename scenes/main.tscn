@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://g12ul62mede4"]
+[gd_scene load_steps=9 format=3 uid="uid://g12ul62mede4"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_2alvn"]
 [ext_resource type="PackedScene" uid="uid://14kjfho0okcf" path="res://scenes/player/player.tscn" id="1_qghfo"]
 [ext_resource type="PackedScene" uid="uid://7qrm8boldaej" path="res://scenes/level/level.tscn" id="1_qtwae"]
 [ext_resource type="AudioStream" uid="uid://dao5bs7l7tfdt" path="res://Pandora Jam assets/SOUNDS - MUSIC (File responses)/9_Boss_1_Master - Nicolas NONYME.mp3" id="4_4m7fr"]
 [ext_resource type="PackedScene" uid="uid://cmv6cy44pa8ee" path="res://scenes/ui.tscn" id="4_o67c0"]
+[ext_resource type="Texture2D" uid="uid://d3gfg74l5uotb" path="res://sprites/level/background/Sky.png" id="6_hspcp"]
+[ext_resource type="Texture2D" uid="uid://c2ftvqx50snxm" path="res://sprites/level/background/Hills.png" id="7_bn4ac"]
+[ext_resource type="Texture2D" uid="uid://bba002wudiibb" path="res://sprites/level/background/stones.png" id="8_h73e7"]
 
 [node name="Main" type="Node2D"]
 texture_filter = 1
@@ -22,4 +25,23 @@ stream = ExtResource("4_4m7fr")
 volume_db = -15.928
 parameters/looping = false
 
+[node name="Sky" type="Sprite2D" parent="."]
+z_index = -1000
+position = Vector2(6400, 320)
+scale = Vector2(5, 5)
+texture = ExtResource("6_hspcp")
+
+[node name="Hills" type="Sprite2D" parent="."]
+z_index = -100
+position = Vector2(6400, 320)
+scale = Vector2(5, 5)
+texture = ExtResource("7_bn4ac")
+
+[node name="Stones" type="Sprite2D" parent="."]
+z_index = -50
+position = Vector2(6401, 333)
+scale = Vector2(5, 5)
+texture = ExtResource("8_h73e7")
+
 [node name="Ui" parent="." instance=ExtResource("4_o67c0")]
+position = Vector2(0.000488281, 0)
