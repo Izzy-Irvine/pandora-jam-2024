@@ -108,6 +108,7 @@ func hurt(damage):
 	if health <= 0:
 		$AnimatedSprite2D.play("death")
 	else:
+		$AnimatedSprite2D.play("damage")
 		is_invincible = true
 		invincibility_timer = invincibility_duration
 		$AnimatedSprite2D.modulate.a = 0.5  # Set opacity to 0.5

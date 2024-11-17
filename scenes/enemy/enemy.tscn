@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://biiq6qbe0j6ef"]
+[gd_scene load_steps=22 format=3 uid="uid://biiq6qbe0j6ef"]
 
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_ee3fb"]
 [ext_resource type="Texture2D" uid="uid://bymjnlrx0culi" path="res://sprites/enemy/Kask_attack_01 - Tagu.png" id="2_5wpik"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://cwk0yctmfe2k3" path="res://sprites/enemy/Kask_run_03 - Tagu.png" id="4_aoayd"]
 [ext_resource type="Texture2D" uid="uid://uj856x8nhomc" path="res://sprites/enemy/Kask_attack_03 - Tagu.png" id="4_hhww2"]
 [ext_resource type="Texture2D" uid="uid://uc45rjh4payj" path="res://sprites/enemy/Kask_run_04 - Tagu.png" id="5_h1kjc"]
+[ext_resource type="Texture2D" uid="uid://bv5m50lamh5if" path="res://sprites/Gobber_Hit/Goober_Hit_Bullet/Gobber_Hit_Bullet_1.png" id="5_s2sex"]
+[ext_resource type="Texture2D" uid="uid://cfljn5nxw2iy2" path="res://sprites/Gobber_Hit/Goober_Hit_Bullet/Gobber_Hit_Bullet_2.png" id="6_3kf23"]
 [ext_resource type="Texture2D" uid="uid://bxpon3124rwj0" path="res://sprites/enemy/Kask_death_04 - Tagu.png" id="8_nb3gu"]
 [ext_resource type="Texture2D" uid="uid://bkhcjgecat2ty" path="res://sprites/enemy/Kask_death_05 - Tagu.png" id="9_hsf1u"]
 [ext_resource type="Texture2D" uid="uid://h70haqxswjv7" path="res://sprites/enemy/Kask_crouch_02 - Tagu.png" id="9_j1s7d"]
@@ -33,6 +35,17 @@ animations = [{
 "loop": true,
 "name": &"attack",
 "speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_s2sex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3kf23")
+}],
+"loop": false,
+"name": &"damage",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -93,7 +106,7 @@ overshoot_distance = 670
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_aaan4")
-animation = &"wake"
+animation = &"die"
 flip_h = true
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
