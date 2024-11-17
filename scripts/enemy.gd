@@ -27,7 +27,7 @@ func _ready() -> void:
 	add_child(speed_reduction_timer)
 
 func _process(delta: float) -> void:
-	if active and not dead:
+	if active:
 		move(delta)
 	if dead and not $VisibleOnScreenNotifier2D.is_on_screen():
 		queue_free()
@@ -56,9 +56,10 @@ func move(delta: float):
 		velocity.x = move_toward(velocity.x, 0, acceleration * delta)
 		if velocity.x == 0:
 			knocked_back = false
-	else:	
-		velocity.x += acceleration * direction * delta
-		velocity.x = clamp(velocity.x, -max_velocity.x, max_velocity.x)
+	else:
+		if not dead:
+			velocity.x += acceleration * direction * delta
+			velocity.x = clamp(velocity.x, -max_velocity.x, max_velocity.x)
 	
 	velocity.y += acceleration * current_dir.y * delta
 	velocity.y = clamp(velocity.y, -max_velocity.y, max_velocity.y)
@@ -79,12 +80,11 @@ func damage(damage):
 	
 	if health <= 0:
 		die()
-	else:
-		knocked_back = true
-		var distance = global_position.x - player.global_position.x
-		var current_dir = sign(distance)
-		velocity.x = knockback_strength * (4 / scale.x) * current_dir
-		#reduce_speed()
+	knocked_back = true
+	var distance = global_position.x - player.global_position.x
+	var current_dir = sign(distance)
+	velocity.x = knockback_strength * (4 / scale.x) * current_dir
+	#reduce_speed()
 
 func reduce_speed():
 	if not speed_reduced:
