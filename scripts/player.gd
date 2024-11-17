@@ -12,7 +12,10 @@ var up_max = 120
 var sprite_size
 var health = 100
 
-var fire_timeout = 0
+var cur_gun_timeout = 0
+var gun_timeout = 0.2
+var cur_magic_timeout = 0
+var magic_timeout = 1
 
 var is_walking = false
 
@@ -28,7 +31,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	fire_timeout = max(fire_timeout - delta, 0)
+	cur_gun_timeout = max(cur_gun_timeout - delta, 0)
+	cur_magic_timeout = max(cur_magic_timeout - delta, 0)
 	velocity = Vector2()
 	
 	is_walking = false
@@ -57,18 +61,18 @@ func _process(delta):
 		if global_position.y > up_max:
 			velocity.y = -0.6
 	
-	if Input.is_action_pressed("fire_gun") and fire_timeout == 0:
+	if Input.is_action_pressed("fire_gun") and cur_gun_timeout == 0 and cur_magic_timeout == 0:
 		$AnimatedSprite2D.play("gun_attack")
-		fire_timeout = 0.2
+		cur_gun_timeout = gun_timeout
 		var bullet = bullet_scene.instantiate()
 		bullet.position = position + Vector2(0, 1)
 		bullet.z_index = -1
 		bullet.flipped = $AnimatedSprite2D.scale.x == -1
 		get_parent().add_child(bullet)
 	
-	if Input.is_action_pressed("fire_wand") and fire_timeout == 0:
+	if Input.is_action_pressed("fire_wand") and cur_gun_timeout == 0 and cur_magic_timeout == 0:
 		$AnimatedSprite2D.play("magic_attack")
-		fire_timeout = 1
+		cur_magic_timeout = magic_timeout
 		var bullet = magic_bullet_scene.instantiate()
 		bullet.scale = Vector2(2, 2)
 		bullet.z_index = -1
