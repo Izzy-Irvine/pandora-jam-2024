@@ -29,10 +29,12 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if active:
 		move(delta)
-	if dead and not $VisibleOnScreenNotifier2D.is_on_screen():
-		queue_free()
+	# if dead and not $VisibleOnScreenNotifier2D.is_on_screen():
+		# queue_free()
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
+	if dead:
+		return
 	$AnimatedSprite2D.play("wake")
 	if not active and not dead:
 		$"UwuSfx-JulienBarlet(m0UfTchup)".pitch_scale = randf_range(0.9, 1.1)
