@@ -61,9 +61,9 @@ func move(delta: float):
 
 
 func die():
-       dead = true
-       $AudioStreamPlayer.play(0)
-       $AnimatedSprite2D.play("die")
+	dead = true
+	$AudioStreamPlayer.play(0)
+	$AnimatedSprite2D.play("die")
 
 
 func damage(damage): 
@@ -75,7 +75,7 @@ func damage(damage):
 		knocked_back = true
 		var distance = global_position.x - player.global_position.x
 		var current_dir = sign(distance)
-		velocity = knockback_strength * current_dir
+		velocity = knockback_strength * (4 / scale.x) * current_dir
 		#reduce_speed()
 
 func reduce_speed():
