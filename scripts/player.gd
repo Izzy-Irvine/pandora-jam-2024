@@ -18,6 +18,9 @@ var cur_magic_timeout = 0
 @export var magic_timeout = 1
 
 var is_walking = false
+var is_invincible = false
+var invincibility_duration = 1.0
+var invincibility_timer = 0
 
 signal scroll_right(delta)
 
@@ -90,15 +93,24 @@ func _process(delta):
 	elif velocity.x > 0:
 		$AnimatedSprite2D.scale.x = 1
 
+	if is_invincible:
+		invincibility_timer -= delta
+		if invincibility_timer <= 0:
+			is_invincible = false
+			$AnimatedSprite2D.modulate.a = 1  # Reset opacity to 1
+
 func hurt(damage):
-	if health <= 0:
+	if health <= 0 or is_invincible:
 		return
 		
 	health -= damage
 	
 	if health <= 0:
 		$AnimatedSprite2D.play("death")
-
+	else:
+		is_invincible = true
+		invincibility_timer = invincibility_duration
+		$AnimatedSprite2D.modulate.a = 0.5  # Set opacity to 0.5
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if $AnimatedSprite2D.animation == "death":
