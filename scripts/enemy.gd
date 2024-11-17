@@ -29,8 +29,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if active and not dead:
 		move(delta)
-	if Input.is_action_just_pressed("ui_accept") and active and not dead:
-		die()
+	if dead and not $VisibleOnScreenNotifier2D.is_on_screen():
+		queue_free()
 
 func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
 	$AnimatedSprite2D.play("wake")
