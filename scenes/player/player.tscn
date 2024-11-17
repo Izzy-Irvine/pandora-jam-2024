@@ -12,10 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://bkuakwy3erh8j" path="res://sprites/player/Witch_Idle/Witch_Idle_1.png" id="10_lx1s5"]
 [ext_resource type="Texture2D" uid="uid://chck15dofeoba" path="res://sprites/player/Witch_Idle/Witch_Idle_2.png" id="11_544r8"]
 [ext_resource type="Texture2D" uid="uid://dbiyj5muty3ds" path="res://sprites/player/Witch_Run/Witch_Run_1.png" id="12_0inao"]
-[ext_resource type="Texture2D" uid="uid://ddpgnqdtxabg2" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/witch_attack_01 - Tagu.png" id="12_ir6wj"]
+[ext_resource type="Texture2D" uid="uid://b34m5klvwa0km" path="res://sprites/player/Witch_Spell/Witch_Spell_1.png" id="12_sxewk"]
+[ext_resource type="Texture2D" uid="uid://c3m7ndoia6uq2" path="res://sprites/player/Witch_Spell/Witch_Spell_2.png" id="13_06ntl"]
 [ext_resource type="Texture2D" uid="uid://b73wxdg4y7lbf" path="res://sprites/player/Witch_Run/Witch_Run_2.png" id="13_hlnx8"]
-[ext_resource type="Texture2D" uid="uid://bmwk31mw7e0mj" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/witch_attack_02 - Tagu.png" id="13_r4dwc"]
-[ext_resource type="Texture2D" uid="uid://dlqvge1i2vpj1" path="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/witch_attack_03 - Tagu.png" id="14_u5pi1"]
+[ext_resource type="Texture2D" uid="uid://bq3b6g2hnc35" path="res://sprites/player/Witch_Spell/Witch_Spell_3.png" id="14_jbyan"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j6aoq"]
 size = Vector2(20, 29)
@@ -69,17 +69,17 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("12_ir6wj")
+"texture": ExtResource("12_sxewk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_r4dwc")
+"texture": ExtResource("13_06ntl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_u5pi1")
+"texture": ExtResource("14_jbyan")
 }],
 "loop": false,
 "name": &"magic_attack",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -104,6 +104,6 @@ shape = SubResource("RectangleShape2D_j6aoq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_soxmv")
-animation = &"idle"
+animation = &"magic_attack"
 
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
