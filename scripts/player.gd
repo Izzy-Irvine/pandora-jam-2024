@@ -63,7 +63,7 @@ func _process(delta):
 		$AnimatedSprite2D.play("gun_attack")
 		cur_gun_timeout = gun_timeout
 		var bullet = bullet_scene.instantiate()
-		bullet.position = position + Vector2(0, 1)
+		bullet.position = position + Vector2(0, 1) * $AnimatedSprite2D.scale.x
 		bullet.z_index = -1
 		bullet.flipped = $AnimatedSprite2D.scale.x == -1
 		get_parent().add_child(bullet)
@@ -74,7 +74,7 @@ func _process(delta):
 		var bullet = magic_bullet_scene.instantiate()
 		bullet.scale = Vector2(2, 2)
 		bullet.z_index = -1
-		bullet.position = position + Vector2(20, 0)
+		bullet.position = position + Vector2(15, 0) * $AnimatedSprite2D.scale.x
 		bullet.flipped = $AnimatedSprite2D.scale.x == -1
 		get_parent().add_child(bullet)
 
