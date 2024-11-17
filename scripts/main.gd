@@ -16,3 +16,7 @@ func _ready():
 func _on_player_scroll_right(delta):
 	print("Player scrolled right")
 	level.position.x -= screen_amount * delta  # Scroll speed
+	
+	$Sky.position.x -= screen_amount * delta * 0.1
+	$Hills.position.x -= screen_amount * delta * 0.5
+	$Stones.position.x -= screen_amount * delta
