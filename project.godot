@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Spells n' Shells"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/title_screen.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/image="res://Pandora Jam assets/SPRITES (16x16 - 32x32) (File responses)/Chapo_slime_walk_01 - Tagu.png"
 boot_splash/fullsize=false

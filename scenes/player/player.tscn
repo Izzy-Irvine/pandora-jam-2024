@@ -1,9 +1,12 @@
-[gd_scene load_steps=19 format=3 uid="uid://14kjfho0okcf"]
+[gd_scene load_steps=22 format=3 uid="uid://14kjfho0okcf"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_fkbtj"]
 [ext_resource type="Texture2D" uid="uid://dpj6574l6pmq6" path="res://sprites/player/Witch_Death/Witch_Death_1.png" id="2_stdxr"]
+[ext_resource type="Texture2D" uid="uid://b2cbtgag0puxp" path="res://sprites/Wich_Flinch/Witch_Flitch_1.png" id="2_yd6mv"]
 [ext_resource type="Texture2D" uid="uid://dxlucsr1r65aj" path="res://sprites/player/Witch_Death/Witch_Death_2.png" id="3_om2be"]
+[ext_resource type="Texture2D" uid="uid://db5up655jlego" path="res://sprites/Wich_Flinch/Witch_Flitch_2.png" id="3_w7vov"]
 [ext_resource type="Texture2D" uid="uid://bhiilc67wwu3b" path="res://sprites/player/Witch_Death/Witch_Death_3.png" id="4_tmfbo"]
+[ext_resource type="Texture2D" uid="uid://crhn40ccu7gpc" path="res://sprites/Wich_Flinch/Witch_Flitch_3.png" id="4_wuabl"]
 [ext_resource type="Texture2D" uid="uid://b43ub3ulcsuhw" path="res://sprites/player/Witch_Death/Witch_Death_4.png" id="5_1mwan"]
 [ext_resource type="Texture2D" uid="uid://c6pib7mgan417" path="res://sprites/player/Witch_Death/Witch_Death_5.png" id="6_0mv3j"]
 [ext_resource type="Texture2D" uid="uid://bst2urpp7tb6y" path="res://sprites/player/Witch_Death/Witch_Death_6.png" id="7_1qqih"]
@@ -18,10 +21,24 @@
 [ext_resource type="Texture2D" uid="uid://bq3b6g2hnc35" path="res://sprites/player/Witch_Spell/Witch_Spell_3.png" id="14_jbyan"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j6aoq"]
-size = Vector2(20, 29)
+size = Vector2(18, 22)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_soxmv"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_yd6mv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w7vov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wuabl")
+}],
+"loop": false,
+"name": &"damage",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_stdxr")
@@ -99,11 +116,13 @@ animations = [{
 script = ExtResource("1_fkbtj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(0, 0.5)
+position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_j6aoq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_soxmv")
-animation = &"magic_attack"
+animation = &"damage"
+frame = 2
+frame_progress = 1.0
 
 [connection signal="animation_finished" from="CharacterBody2D/AnimatedSprite2D" to="CharacterBody2D" method="_on_animated_sprite_2d_animation_finished"]
