@@ -68,7 +68,9 @@ func die():
 	$AnimatedSprite2D.play("die")
 
 
-func damage(damage): 
+func damage(damage):
+	if not active:
+		return
 	health -= damage
 	
 	if health <= 0:
