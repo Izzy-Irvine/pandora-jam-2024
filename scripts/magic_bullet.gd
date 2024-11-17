@@ -2,6 +2,8 @@ extends Node2D
 
 var flipped = false
 var enemies_in_area = []
+var damage_timer = 0.0
+const DAMAGE_INTERVAL = 0.0912
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -14,8 +16,11 @@ func _process(delta: float) -> void:
 	var dir = -1 if flipped else 1
 	position.x += 100 * dir * delta
 
-	for enemy in enemies_in_area:
-		enemy.damage(1)
+	damage_timer += delta
+	if damage_timer >= DAMAGE_INTERVAL:
+		damage_timer = 0.0
+		for enemy in enemies_in_area:
+			enemy.damage(1)
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.name.contains("Enemy"):

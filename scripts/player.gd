@@ -22,6 +22,9 @@ var is_invincible = false
 var invincibility_duration = 1.0
 var invincibility_timer = 0
 
+var fire_cooldown = 0.4
+var fire_cooldown_timer = 0
+
 signal scroll_right(delta)
 
 func _ready():
@@ -36,6 +39,7 @@ func _ready():
 func _process(delta):
 	cur_gun_timeout = max(cur_gun_timeout - delta, 0)
 	cur_magic_timeout = max(cur_magic_timeout - delta, 0)
+	fire_cooldown_timer = max(fire_cooldown_timer - delta, 0)
 	velocity = Vector2()
 	
 	is_walking = false
@@ -62,7 +66,7 @@ func _process(delta):
 		if global_position.y > up_max:
 			velocity.y = -0.6
 	
-	if Input.is_action_pressed("fire_gun") and cur_gun_timeout == 0 and cur_magic_timeout == 0 and not dead:
+	if Input.is_action_pressed("fire_gun") and cur_gun_timeout == 0 and cur_magic_timeout == 0 and fire_cooldown_timer == 0 and not dead:
 		$AnimatedSprite2D.play("gun_attack")
 		cur_gun_timeout = gun_timeout
 		var bullet = bullet_scene.instantiate()
@@ -71,7 +75,7 @@ func _process(delta):
 		bullet.flipped = $AnimatedSprite2D.scale.x == -1
 		get_parent().add_child(bullet)
 	
-	if Input.is_action_just_pressed("fire_wand") and cur_gun_timeout == 0 and cur_magic_timeout == 0 and not dead:
+	if Input.is_action_just_pressed("fire_wand") and cur_gun_timeout == 0 and cur_magic_timeout == 0 and fire_cooldown_timer == 0 and not dead:
 		$AnimatedSprite2D.play("magic_attack")
 		cur_magic_timeout = magic_timeout
 		var bullet = magic_bullet_scene.instantiate()
@@ -111,6 +115,7 @@ func hurt(damage):
 		$AnimatedSprite2D.play("damage")
 		is_invincible = true
 		invincibility_timer = invincibility_duration
+		fire_cooldown_timer = fire_cooldown
 		$AnimatedSprite2D.modulate.a = 0.5  # Set opacity to 0.5
 
 func _on_animated_sprite_2d_animation_finished() -> void:
