@@ -4,6 +4,7 @@ var player = null
 var level = null
 var screen_width = 0
 var screen_margin = 0
+var time_passed = 0.0
 
 func _ready():
 	screen_width = get_viewport().get_visible_rect().size.x
@@ -21,13 +22,16 @@ func _on_player_scroll_right(screen_amount):
 	$Stones.position.x -= screen_amount
 
 func _process(delta: float) -> void:
-	if player.global_position.x > screen_width - screen_margin:
-		var not_dead = 0
-		for child in level.get_children():
-			if "Enemy" in child.name:
-				if player.global_position.distance_to(child.global_position) > 1.5 * screen_width:
-					continue
-				if !child.dead:
-					not_dead += 1
-		if not_dead == 0:
-			get_tree().change_scene_to_file("res://scenes/win.tscn")
+	time_passed += delta
+	if time_passed >= 1.0:
+		time_passed = 0.0
+		if player.global_position.x > screen_width - screen_margin:
+			var not_dead = 0
+			for child in level.get_children():
+				if "Enemy" in child.name:
+					if player.global_position.distance_to(child.global_position) > 1.5 * screen_width:
+						continue
+					if !child.dead:
+						not_dead += 1
+			if not_dead == 0:
+				get_tree().change_scene_to_file("res://scenes/win.tscn")
