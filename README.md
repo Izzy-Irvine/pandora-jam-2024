@@ -1,5 +1,5 @@
 ## Spells n' Shells
-Imagine you're a wizard, but you carry a glock just encase.
+Imagine you're a wizard, but you carry a glock just in case.
 
 [Click here to play.](https://izzy-irvine.github.io/pandora-jam-2024/)
 
