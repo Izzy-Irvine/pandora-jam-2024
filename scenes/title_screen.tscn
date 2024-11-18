@@ -1,15 +1,22 @@
-[gd_scene load_steps=7 format=3 uid="uid://cfjigycm13l8s"]
+[gd_scene load_steps=9 format=3 uid="uid://cfjigycm13l8s"]
 
 [ext_resource type="Texture2D" uid="uid://cnl25e04pb84v" path="res://sprites/Title/Title_Background.png" id="1_7ofqs"]
 [ext_resource type="Texture2D" uid="uid://ff8u5bbjlssx" path="res://sprites/Title/Title_Start.png" id="2_wf5on"]
 [ext_resource type="Texture2D" uid="uid://wh1d53g62mpk" path="res://sprites/Title/Title_Start_Hover.png" id="3_6baa7"]
 [ext_resource type="Script" path="res://scenes/start_button.gd" id="4_2e6yl"]
+[ext_resource type="FontFile" uid="uid://ofbjmrt73mfr" path="res://fonts/Kubasta.ttf" id="5_k5jfa"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_hmspv"]
 action = &"ui_accept"
 
 [sub_resource type="Shortcut" id="Shortcut_nsi4e"]
 events = [SubResource("InputEventAction_hmspv")]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qkkol"]
+font = ExtResource("5_k5jfa")
+font_size = 43
+outline_size = 9
+outline_color = Color(0.282353, 0.282353, 0.282353, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -49,5 +56,17 @@ shortcut = SubResource("Shortcut_nsi4e")
 texture_normal = ExtResource("2_wf5on")
 texture_hover = ExtResource("3_6baa7")
 script = ExtResource("4_2e6yl")
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_top = 314.0
+offset_right = 1152.0
+offset_bottom = 558.0
+text = "Imagine you're a wizard, but you carry a glock just in case.
+WASD or Arrows - Move
+Q or O - Gun
+E or P - Magic"
+label_settings = SubResource("LabelSettings_qkkol")
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [connection signal="pressed" from="Start Button" to="Start Button" method="_on_pressed"]
